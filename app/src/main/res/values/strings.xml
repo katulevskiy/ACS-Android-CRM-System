@@ -7,5 +7,7 @@
     <string name="main_scene_text">Главная</string>
     <string name="logo_of_app_1">Courses</string>
     <string name="logo_of_app_2">App</string>
-    <string name="placeholder">placeholder_item_description</string>
+    <string name="placeholder">placeholder</string>
+    <string name="course_start_date">Старт обучения:</string>
+    <string name="course_level">Уровень:</string>
 </resources>
