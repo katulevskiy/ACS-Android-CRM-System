@@ -3,12 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Studio Projects/ACS-Android-CRM-System/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/drawable/ic_hot_deal.xml" value="0.3203125" />
         <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/layout/activity_main.xml" value="0.2222222222222222" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Android CRM system</string>
     <string name="sales_icon">Sales</string>
+    <string name="settings_icon">Setting</string>
     <string name="contacts_text">Контакты</string>
     <string name="about_text">Про нас</string>
     <string name="main_scene_text">Главная</string>
