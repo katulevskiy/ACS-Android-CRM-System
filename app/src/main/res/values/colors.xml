@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="mainBgColor">#F6F6F6</color>
     <color name="asideBgColor">#EAEAEA</color>
+    <color name="name_of_app">#EC6D6D</color>
 </resources>

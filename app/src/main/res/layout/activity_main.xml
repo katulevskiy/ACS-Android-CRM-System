@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="65dp"
         android:layout_height="0dp"
         android:background="@color/asideBgColor"
@@ -44,6 +45,7 @@
             android:id="@+id/about"
             android:layout_width="100dp"
             android:layout_height="145dp"
+            android:layout_marginBottom="0dp"
             android:fontFamily="@font/montserrat"
             android:gravity="center"
             android:rotation="-90"
@@ -58,6 +60,7 @@
             android:id="@+id/main_scene"
             android:layout_width="100dp"
             android:layout_height="145dp"
+            android:layout_marginBottom="0dp"
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center"
             android:rotation="-90"
@@ -68,5 +71,31 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/logo_of_app_1"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/logo_of_app_2"
+        android:textColor="@color/name_of_app"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
