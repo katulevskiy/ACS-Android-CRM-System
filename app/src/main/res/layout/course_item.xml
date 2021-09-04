@@ -24,9 +24,10 @@
 
             <ImageView
                 android:id="@+id/courseImage"
-                android:contentDescription="@string/placeholder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/placeholder"
+                android:transitionName="courseImage"
                 app:srcCompat="@drawable/ic_java2" />
 
             <TextView
