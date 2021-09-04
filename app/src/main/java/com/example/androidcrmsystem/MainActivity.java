@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         List<Category> categoryList = new ArrayList<>();
-        categoryList.add(new Category(1, "Игры"));
+        categoryList.add(new Category(1, "Тикеты"));
         categoryList.add(new Category(2, "Сайты"));
         categoryList.add(new Category(3, "Языки"));
         categoryList.add(new Category(4, "Прочее"));
