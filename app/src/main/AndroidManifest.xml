@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidCRMSystem">
         <activity
+            android:name=".EmailPasswordActivity"
+            android:exported="true" />
+        <activity
             android:name=".CoursePage"
             android:exported="true" />
         <activity

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "999742449638",
+    "firebase_url": "https://ultimate-crm-1337-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ultimate-crm-1337",
+    "storage_bucket": "ultimate-crm-1337.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999742449638:android:03a2e65e3a79e5b23f9827",
+        "android_client_info": {
+          "package_name": "com.example.androidcrmsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999742449638-klnfaugu8icgpcc2mk3o6d4pu2irttg1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw_jqDErO0sPsq4bIUlzS4Xp8-yojxPPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999742449638-klnfaugu8icgpcc2mk3o6d4pu2irttg1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

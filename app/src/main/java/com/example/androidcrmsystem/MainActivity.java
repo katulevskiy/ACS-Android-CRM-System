@@ -1,5 +1,6 @@
 package com.example.androidcrmsystem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -10,6 +11,11 @@ import com.example.androidcrmsystem.adapter.CategoryAdapter;
 import com.example.androidcrmsystem.adapter.CourseAdapter;
 import com.example.androidcrmsystem.model.Category;
 import com.example.androidcrmsystem.model.Courses;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,14 +24,35 @@ public class MainActivity extends AppCompatActivity {
 
     RecyclerView categoryRecycler, courseRecycler;
     CategoryAdapter categoryAdapter;
+    FirebaseDatabase database = FirebaseDatabase.getInstance("https://ultimate-crm-1337-default-rtdb.europe-west1.firebasedatabase.app/");
+    DatabaseReference myRef = database.getReference ();
     CourseAdapter courseAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        List<Category> categoryList = new ArrayList<>();
+        //DATABASE
+//        DatabaseReference Categories = myRef.child("Categories");
+//        DatabaseReference Category1 = Categories.child("Category1");
+//
+//        String id1;
+//        Category1.child("id").addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                id1 = dataSnapshot.getValue(String.class);
+//            }
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//            }
+//        });
+//
+//        System.out.println("=================================="+ id1[0] +"=============================");
+        //==========
+
+        List<Category> categoryList = new ArrayList<>();//data file from DB
         categoryList.add(new Category(1, "Тикеты"));
         categoryList.add(new Category(2, "Сайты"));
         categoryList.add(new Category(3, "Языки"));
@@ -35,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
         setCategoryRecycler(categoryList);
 
         List<Courses> coursesList = new ArrayList<>();
-        coursesList.add(new Courses(1, "java2", "Создание приложения\nна Java", "25 марта", "начальный", "#424345", "Программа обучения Джава – рассчитана на новичков в данной сфере. \n\nЗа программу вы изучите построение графических приложений под ПК, разработку веб сайтов на основе Java Spring Boot, изучите построение полноценных Андроид приложений и отлично изучите сам язык Джава!"));
-        coursesList.add(new Courses(2, "python","Обучение модели\nна Python", "10 января", "продвинутый", "#9FA52D", "test"));
+        coursesList.add(new Courses(1, "java2", "Создание приложения\nна Java", "25 марта", "начальный", "#424345", "Здесь будет располагаться какой душе угодно текст с описанием проекта, находящегося в разработке. \n\nФорматирование текста работает, а добавить описание можно в MainActivity.java \n\nТеперь надо реализовать добавление в риал тайм"));
+        coursesList.add(new Courses(2, "python","Обучение модели\nна Python", "10 января", "отладка", "#9FA52D", "test"));
 
         setCourseRecycler(coursesList);
     }
@@ -65,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
         categoryRecycler.setAdapter(categoryAdapter);
 
+        //"https://ultimate-crm-1337-default-rtdb.europe-west1.firebasedatabase.app/"
 
     }
 }
