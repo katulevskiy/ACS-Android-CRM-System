@@ -1,38 +1,50 @@
 package com.example.androidcrmsystem;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.androidcrmsystem.adapter.CategoryAdapter;
 import com.example.androidcrmsystem.adapter.CourseAdapter;
 import com.example.androidcrmsystem.model.Category;
 import com.example.androidcrmsystem.model.Courses;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private FirebaseAuth mAuth;
+    private DatabaseReference myRef;
+    private List<String> DiscrTasks;
+
     RecyclerView categoryRecycler, courseRecycler;
     CategoryAdapter categoryAdapter;
     FirebaseDatabase database = FirebaseDatabase.getInstance("https://ultimate-crm-1337-default-rtdb.europe-west1.firebasedatabase.app/");
-    DatabaseReference myRef = database.getReference ();
+    //DatabaseReference myRef = database.getReference ();
     CourseAdapter courseAdapter;
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        //if (user == null){
+        Intent intent = new Intent(MainActivity.this, EmailPasswordActivity.class);
+        startActivity(intent);
+        //}
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         //DATABASE
 //        DatabaseReference Categories = myRef.child("Categories");

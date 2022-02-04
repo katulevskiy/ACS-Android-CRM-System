@@ -3,6 +3,7 @@ package com.example.androidcrmsystem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -23,6 +24,8 @@ public class EmailPasswordActivity extends AppCompatActivity  implements View.On
     private EditText ETemail;
     private EditText ETpassword;
 
+    private boolean isAuthorised = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,12 @@ public class EmailPasswordActivity extends AppCompatActivity  implements View.On
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null){
                     //user signed in
+                    isAuthorised = true;
+
+                    Intent intent = new Intent(EmailPasswordActivity.this, MainActivity.class);
+                    startActivity(intent);
+
+
                     //Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
 
                 } else {
@@ -48,12 +57,18 @@ public class EmailPasswordActivity extends AppCompatActivity  implements View.On
             }
         };
 
+
         ETemail = (EditText) findViewById(R.id.et_email);
         ETpassword = (EditText) findViewById(R.id.et_password);
 
         findViewById(R.id.btn_sign_in).setOnClickListener(this);
         findViewById(R.id.btn_registration).setOnClickListener(this);
 
+        FirebaseUser user = mAuth.getCurrentUser();
+        if(user != null) {
+//            Intent intent = new Intent(EmailPasswordActivity.this, MainActivity.class);
+//            startActivity(intent);
+        }
     }
 
     @Override
