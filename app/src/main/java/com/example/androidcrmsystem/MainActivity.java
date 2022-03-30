@@ -21,14 +21,11 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private FirebaseAuth mAuth;
-    private DatabaseReference myRef;
-    private List<String> DiscrTasks;
 
     RecyclerView categoryRecycler, courseRecycler;
     CategoryAdapter categoryAdapter;
     FirebaseDatabase database = FirebaseDatabase.getInstance("https://ultimate-crm-1337-default-rtdb.europe-west1.firebasedatabase.app/");
-    //DatabaseReference myRef = database.getReference ();
+    DatabaseReference myRef = database.getReference ();
     CourseAdapter courseAdapter;
 
 
@@ -36,11 +33,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        //if (user == null){
-        Intent intent = new Intent(MainActivity.this, EmailPasswordActivity.class);
-        startActivity(intent);
-        //}
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);

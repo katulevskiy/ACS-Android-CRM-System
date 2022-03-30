@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidCRMSystem">
         <activity
-            android:name=".EmailPasswordActivity"
+            android:name=".ListTasks"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".CoursePage"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".EmailPasswordActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
