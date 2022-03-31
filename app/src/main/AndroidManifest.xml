@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidCRMSystem">
         <activity
+            android:name=".adapter.UserAdapter"
+            android:exported="true" />
+        <activity
+            android:name=".AvailableTasksEditor"
+            android:exported="true" />
+        <activity
+            android:name=".UsersInfo"
+            android:exported="true" />
+        <activity
             android:name=".ListTasks"
             android:exported="true" />
         <activity

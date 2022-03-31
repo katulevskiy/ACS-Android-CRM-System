@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView categoryRecycler, courseRecycler;
     CategoryAdapter categoryAdapter;
     FirebaseDatabase database = FirebaseDatabase.getInstance("https://ultimate-crm-1337-default-rtdb.europe-west1.firebasedatabase.app/");
-    DatabaseReference myRef = database.getReference ();
+    DatabaseReference myRef = database.getReference();
     CourseAdapter courseAdapter;
 
 
@@ -37,24 +37,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        //DATABASE
-//        DatabaseReference Categories = myRef.child("Categories");
-//        DatabaseReference Category1 = Categories.child("Category1");
-//
-//        String id1;
-//        Category1.child("id").addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                id1 = dataSnapshot.getValue(String.class);
-//            }
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError databaseError) {
-//            }
-//        });
-//
-//        System.out.println("=================================="+ id1[0] +"=============================");
-        //==========
 
         List<Category> categoryList = new ArrayList<>();//data file from DB
         categoryList.add(new Category(1, "Тикеты"));
@@ -96,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
 
         categoryRecycler.setAdapter(categoryAdapter);
 
-        //"https://ultimate-crm-1337-default-rtdb.europe-west1.firebasedatabase.app/"
 
     }
 }
