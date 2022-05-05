@@ -5,15 +5,30 @@
       <map>
         <entry key="..\:/Android Studio Projects/ACS-Android-CRM-System/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
         <entry key="..\:/Android Studio Projects/ACS-Android-CRM-System/app/src/main/res/layout/category_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.291015625" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/drawable/ic_category.xml" value="0.291015625" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/drawable/ic_filter.xml" value="0.291015625" />
         <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/drawable/ic_hot_deal.xml" value="0.3203125" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/drawable/ic_java2.xml" value="0.291015625" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/drawable/ic_launcher_background.xml" value="0.291015625" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/drawable/ic_python.xml" value="0.291015625" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/drawable/ic_shop.xml" value="0.291015625" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/drawable/ic_snapsvg_seeklogo_com.xml" value="0.291015625" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/font/montserrat.xml" value="0.3015625" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/font/montserrat_bold.xml" value="0.3015625" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/layout/activity_about.xml" value="0.27890625" />
         <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/layout/activity_available_tasks_editor.xml" value="0.27890625" />
-        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/layout/activity_email_password.xml" value="0.12" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/layout/activity_complete_task.xml" value="0.268359375" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/layout/activity_course_page.xml" value="0.27890625" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/layout/activity_email_password.xml" value="0.22" />
         <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/layout/activity_list_tasks.xml" value="0.23203125" />
         <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/layout/activity_main.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/layout/activity_user_adapter.xml" value="0.268359375" />
         <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/layout/activity_users_info.xml" value="0.27890625" />
         <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/layout/category_item.xml" value="0.228125" />
         <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/layout/course_item.xml" value="0.228125" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/layout/user_item.xml" value="0.27890625" />
+        <entry key="..\:/Users/Danka/AndroidStudioProjects/AndroidCRMsystem/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.291015625" />
       </map>
     </option>
   </component>

@@ -16,28 +16,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:contentDescription="@string/sales_icon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_hot_deal" />
-
         <TextView
             android:id="@+id/contacts"
             android:layout_width="100dp"
             android:layout_height="145dp"
-            android:layout_marginBottom="100dp"
+            android:layout_marginBottom="184dp"
             android:fontFamily="@font/montserrat"
             android:gravity="center"
             android:rotation="-90"
             android:text="@string/contacts_text"
             android:textColor="#000000"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -70,6 +60,37 @@
             app:layout_constraintBottom_toTopOf="@+id/about"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonMain"
+            android:layout_width="63dp"
+            android:layout_height="146dp"
+            android:layout_marginTop="62dp"
+            android:alpha="0"
+            android:text="Main"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonTasks"
+            android:layout_width="62dp"
+            android:layout_height="143dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:alpha="0"
+            android:text="Tasks"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonMain" />
+
+        <Button
+            android:id="@+id/buttonAbout"
+            android:layout_width="63dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="3dp"
+            android:alpha="0"
+            android:text="About"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonTasks" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView

@@ -2,15 +2,15 @@
     <string name="app_name">Android CRM system</string>
     <string name="sales_icon">Sales</string>
     <string name="settings_icon">Setting</string>
-    <string name="contacts_text">Контакты</string>
-    <string name="about_text">Задания</string>
+    <string name="contacts_text">Edit</string>
+    <string name="about_text">Tasks</string>
     <string name="about_text_backup">Про нас</string>
-    <string name="main_scene_text">Главная</string>
+    <string name="main_scene_text">Home</string>
     <string name="logo_of_app_1">Ultimate</string>
     <string name="logo_of_app_2">CRM</string>
     <string name="placeholder">placeholder</string>
-    <string name="course_start_date">Дата сдачи\nпроекта:</string>
+    <string name="course_start_date">Deadline:</string>
     <string name="course_level_backup">Уровень:</string>
-    <string name="course_level">Этап:</string>
+    <string name="course_level">Id:</string>
     <string name="course_desc">Программа обучения Джава – рассчитана на новичков в данной сфере. За программу вы изучите построение графических приложений под ПК, разработку веб сайтов на основе Java Spring Boot, изучите построение полноценных Андроид приложений и отлично изучите сам язык Джава!</string>
 </resources>

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidCRMSystem">
         <activity
+            android:name=".completeTask"
+            android:exported="true" />
+        <activity
+            android:name=".About"
+            android:exported="true" />
+        <activity
             android:name=".adapter.UserAdapter"
             android:exported="true" />
         <activity

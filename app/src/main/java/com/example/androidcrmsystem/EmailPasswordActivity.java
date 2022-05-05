@@ -45,8 +45,28 @@ public class EmailPasswordActivity extends AppCompatActivity  implements View.On
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null){
                     //user signed in
+//                    myRef = FirebaseDatabase.getInstance("https://ultimate-crm-1337-default-rtdb.europe-west1.firebasedatabase.app").getReference();
+//                    String uid = user.getUid();
+//
+//                    myRef.child(uid).child("UserInfo").child("isAdmin").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+//                        @Override
+//                        public void onComplete(@NonNull Task<DataSnapshot> task) {
+//                            if (!task.isSuccessful()) {
+//                                Log.e("firebase", "Error getting data", task.getException());
+//                            }
+//                            else {
+//                                String isAdmin = String.valueOf(task.getResult().getValue());
+//                                if (isAdmin.equals("yes")){
+//                                    Intent intent = new Intent(EmailPasswordActivity.this, MainActivity.class);
+//                                    startActivity(intent);
+//                                }
+//                                else{Intent intent = new Intent(EmailPasswordActivity.this, MainActivity.class);
+//                                    startActivity(intent);}
+//                            }
+//                        }
+//                    });
 
-                    Intent intent = new Intent(EmailPasswordActivity.this, ListTasks.class);
+                    Intent intent = new Intent(EmailPasswordActivity.this, MainActivity.class);
                     startActivity(intent);
 
                     //Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
@@ -71,7 +91,7 @@ public class EmailPasswordActivity extends AppCompatActivity  implements View.On
         FirebaseUser user = mAuth.getCurrentUser();
 
         if(user != null) {
-            Intent intent = new Intent(EmailPasswordActivity.this, ListTasks.class);
+            Intent intent = new Intent(EmailPasswordActivity.this, MainActivity.class);
             startActivity(intent);
         }
     }
@@ -125,18 +145,21 @@ public class EmailPasswordActivity extends AppCompatActivity  implements View.On
                     myRef = FirebaseDatabase.getInstance("https://ultimate-crm-1337-default-rtdb.europe-west1.firebasedatabase.app").getReference();
                     FirebaseUser user = mAuth.getInstance().getCurrentUser();
                     String uid = user.getUid();
-                    myRef.child(uid).child("Tasks").child("0").setValue("No active tasks (automated)");
                     myRef.child(uid).child("UserInfo").child("email").setValue(email);
                     myRef.child(uid).child("UserInfo").child("isAdmin").setValue(isAdmin);
-//                    myRef.child(uid).child("Email").setValue(email);
+                    myRef.child(uid).child("Tasks").child("0").child("Title").setValue("No active tasks");
+                    myRef.child(uid).child("Tasks").child("0").child("Description").setValue("No available descriptions");
+                    myRef.child(uid).child("Tasks").child("0").child("Deadline").setValue("No deadlines set up yet");
+                    Toast.makeText(EmailPasswordActivity.this, "Регистрация успешна", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(EmailPasswordActivity.this, EmailPasswordActivity.class);
                     startActivity(intent);
                     //Created a user
 
-                    Toast.makeText(EmailPasswordActivity.this, "Регистрация успешна", Toast.LENGTH_SHORT).show();
                 }
                 else
                     Toast.makeText(EmailPasswordActivity.this, "Регистрация провалена", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(EmailPasswordActivity.this, EmailPasswordActivity.class);
+                    startActivity(intent);
             }
         });
         // Add admin access if admin code is correct

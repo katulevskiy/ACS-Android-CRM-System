@@ -15,4 +15,12 @@
         >
     </ListView>
 
+    <Button
+        android:id="@+id/buttonTaskComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete the task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
